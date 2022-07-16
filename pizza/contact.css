@@ -1,0 +1,82 @@
+label,
+input,
+textarea {
+  display: block;
+}
+.contact-container {
+  border: 2px solid black;
+  width: 50%;
+  text-align: center;
+  border-radius: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  height: 100%;
+  margin: 5%;
+  padding: 0;
+  background-color: beige;
+}
+h1 {
+  font-size: 100px;
+  text-align: center;
+  margin: 0;
+  color: darkgreen;
+}
+.Menu {
+  grid-area: Menu;
+  overflow: hidden;
+  background-color: aqua;
+  text-align: center;
+}
+.Menu a {
+  float: left;
+  text-align: center;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-size: 22px;
+}
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.Follow-us {
+  grid-area: Follow-us;
+  display: flex;
+  margin-left: 500px;
+}
+.Menu-2 {
+  grid-area: Menu-2;
+  display: flex;
+}
+.Footer {
+  grid-area: Footer;
+  text-align: center;
+  color: #04aa6d;
+}

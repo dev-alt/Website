@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- This section links to my style sheet and a second link for social media icons -->
+    <link rel="stylesheet" href="pizza_style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!--This is our main page div container  -->
+    <div class="container">
+      <div class="Header">
+        <h1>Andrew's Pizza Store</h1>
+      </div>
+      <div class="Menu">
+        <a href="#Pizzas">Pizzas</a>
+        <a href="Contact.html">Contact Us</a>
+      </div>
+      <div class="Pizza-1">
+        <h4>Hawaiian Pizza $5.00</h4>
+        <img src="images/Hawaiian-Pizza.jpg" alt="" />
+        <button type="button" onclick="addToCart(0)">Add to order</button><!--addToCart(0) makes the button load the javascirpt  -->
+      </div>
+      <div class="Pizza-2">
+        <h4>Ham & Cheese Pizza $5.00</h4>
+        <img src="images/ham-cheese-pizza.jpg" alt="" />
+        <button type="button" onclick="addToCart(1)">Add to order</button>
+      </div>
+      <div class="Pizza-3">
+        <h4>Beef & Onion $5.00</h4>
+        <img src="images/Beef-onion.jpg" alt="" />
+        <button type="button" onclick="addToCart(2)">Add to order</button>
+      </div>
+      <div class="Pizza-4">
+        <h4>Supreme $5.00</h4>
+        <img src="images/supreme-pizza.jpg" alt="" />
+        <button type="button" onclick="addToCart(3)">Add to order</button>
+      </div>
+      <div class="Chips">
+        <h4>Chips $3.00</h4>
+        <img src="images/chips.jpg" alt="" />
+        <button type="button" onclick="addToCart(4)">Add to order</button>
+      </div>
+      <div class="Garlic-Bread">
+        <h4>Garlic Bread $2.50</h4>
+        <img src="images/garlicBread.jpg" alt="aaa" />
+        <button type="button" onclick="addToCart(5)">Add to order</button>
+      </div>
+      <div class="Coke">
+        <h4>Coke $2.00</h4>
+        <img src="images/coke.jpg" alt="" />
+        <button type="button" onclick="addToCart(6)">Add to order</button>
+      </div>
+      <div class="Coke-Zero">
+        <h4>Coke Zero $2.00</h4>
+        <img src="images/coke-zero.jpg" alt="" />
+        <button type="button" onclick="addToCart(7)">Add to order</button>
+      </div>
+      <div class="cartContainer">
+        <h2>Cart</h2>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+          </thead>
+          <tbody id="carttable">
+
+          <!-- Insert cart contents here -->
+          </tbody>
+        </table><hr>
+        <table id="carttotals">
+          <tr>
+            <td><strong>Items</strong></td>
+            <td><strong>Total</strong></td>
+          </tr>
+          <tr>
+            <td>x <span id="itemsquantity">0</span></td>
+           
+            <td>$<span id="total">0</span></td>
+          </tr></table>
+
+          
+        <div class="cart-buttons">  
+          <button id="emptycart" onclick="emptyCart()">Empty Cart</button>
+          <button id="updateTotal" onclick="updateTotal()">Update Total</button>
+        </div>
+      </div>
+      </div>
+      <div class="Follow-us">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+      <div class="Menu-2">
+        <a href="#Pizzas">Pizzas ></a>
+        <a href="Contact.html">Contact Us</a>
+      </div>
+      <div class="Footer">
+        Copyright © Andrew's Pizza inc. All Rights Reserved.
+      </div>
+    </div>
+    <!--This is where my scripts load  -->
+    <script src="pizzaItems.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>
