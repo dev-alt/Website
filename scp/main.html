@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
@@ -49,8 +48,72 @@
       }
     </style>
   </head>
-  <body>
-    <img src="images/scp_body.jpg" width="100%" height="100%" />
-    <a href="index.html" class="cyberpunk">Enter Site</a>
+  <body class="bg-info">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">SCP</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right"></ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+      <div class="row content">
+        <div class="col-sm-2 sidenav">
+          <p><a href="scp-001.html">scp-001</a></p>
+          <p><a href="scp-002.html">scp-002</a></p>
+          <p><a href="scp-003.html">scp-003</a></p>
+          <p><a href="scp-004.html">scp-004</a></p>
+          <p><a href="scp-005.html">scp-005</a></p>
+          <p><a href="scp-006.html">scp-006</a></p>
+        </div>
+        <div class="col-sm-8 text-left">
+          <h1 class="text-center">001 to 010</h1>
+<!-- create rows that contain links to case files -->
+          <div class="row text-center">
+
+            <s> <a href="scp-001.html">SCP-001</a>   Awaiting De-classification</s>
+<br>
+                <a href="scp-002.html">SCP-002</a>  The "Living" Room
+                <br>
+                <a href="scp-003.html">SCP-003</a>  Biology Motherboard
+                <br>
+                <a href="scp-004.html">SCP-004</a>  The 12 Rusty Keys and the Door
+                <br>
+                <a href="scp-005.html">SCP-005</a>  Skeleton Key
+                <br>
+                <a href="scp-006.html">SCP-006</a>  Fountain of Youth
+                <br>
+                <del> <a href="scp-007.html">SCP-007</a>  Abdominal Planet</del>
+                <br>
+                <del> <a href="scp-008.html">SCP-008</a>  Zombie Plague</del>
+                <br>
+                <del> <a href="scp-009.html">SCP-009</a>  Red Ice</del>
+                <br>
+                <del> <a href="scp-010.html">SCP-010</a>  Collars of Control</del>
+                <br>
+        </div>
+
+
+    <footer class="container-fluid text-center">
+      <p>Footer Text</p>
+    </footer>
   </body>
 </html>
