@@ -1,0 +1,5 @@
+html {
+  background: white !important;
+  color: black !important;
+}
+@import "bootstrap";

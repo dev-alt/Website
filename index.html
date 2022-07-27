@@ -1,15 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/Projects-Grid-images.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+    <link
+      rel="stylesheet"
+      href="assets/css/light.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/dark.css"
+      media="(prefers-color-scheme: dark)"
+    />
   </head>
+
   <body>
-    <h1>Welcome to my website</h1>
-    <ul>
-      <li><a href="projects.html">Project</a></li>
-    </ul>
+    <script src="assets/js/script.js"></script>
+    <header></header>
+    <nav class="navbar navbar-light navbar-expand-md">
+      <div class="container-fluid w-100">
+        <a class="navbar-brand" href="#">Dev-Alt</a
+        ><button
+          data-bs-toggle="collapse"
+          class="navbar-toggler"
+          data-bs-target="#navcol-1"
+        >
+          <span class="visually-hidden">Toggle navigation</span
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+          </ul>
+          <dark-mode-toggle
+          id="dark-mode-toggle"
+          appearance="toggle"
+          dark="dark"
+          light="light"
+        ></dark-mode-toggle>
+        </div>
+    </nav>
+    <div class="container py-4 py-xl-5">
+      <div class="row mb-5">
+        <div class="col-md-8 col-xl-6 text-center mx-auto">
+          <h2>Projects</h2>
+          <p class="w-lg-50">Check out my following projects.</p>
+        </div>
+      </div>
+      <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+        <div class="col">
+          <div>
+            <a href="csharp.html"
+              ><img
+                class="rounded img-fluid shadow w-100 fit-cover"
+                src="assets/images/c-sharp.svg"
+                alt="C#"
+                style="height: 250px;"
+            /></a>
+            <div class="py-4">
+              <h4><a href="csharp.html">C#</a></h4>
+              <p>
+                C# is a general-purpose, object-oriented programming language
+                that adds support for modeling objects and their interactions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <a href="javascript.html"
+              ><img class="img-fluid w-100" src="assets/images/react.svg"
+              alt="Javascript"
+              style="height: 250px" />
+            </a>
+            <div class="py-4">
+              <h4><a href="javascript.html">Javascript</a></h4>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <a href="python.html">
+              <img
+                class="img-fluid w-100"
+                src="assets/images/python.svg"
+                alt="Python"
+                style="height: 250px;"
+            /></a>
+            <div class="py-4">
+              <h4><a href="python.html">Python</a></h4>
+              <p>
+                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+                justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
+                elit non mi porta gravida at eget metus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <a href="websites.html"
+              ><img
+                class="img-fluid w-100"
+                src="assets/images/html.svg"
+                alt="HTML"
+                style="height: 250px;"
+            /></a>
+            <div class="py-4">
+              <h4><a href="websites.html">Websites</a></h4>
+              <p>
+                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+                justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
+                elit non mi porta gravida at eget metus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <a href="r.html"
+              ><img class="img-fluid w-100" src="assets/images/r.svg" alt="R"                 style="height: 250px;"
+            /></a>
+            <div class="py-4">
+              <h4><a href="r.html">R</a></h4>
+              <p>
+                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+                justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
+                elit non mi porta gravida at eget metus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <a href="sql.html"
+              ><img
+                class="img-fluid w-100"
+                src="assets/images/sql.svg"
+                alt="SQL"
+                style="height: 250px;"
+            /></a>
+            <div class="py-4">
+              <h4><a href="sql.html">SQL</a></h4>
+              <p>
+                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+                justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
+                elit non mi porta gravida at eget metus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside></aside>
+    <main></main>
+    <footer></footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
